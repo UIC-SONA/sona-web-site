@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Heart } from "lucide-react"
+import sonaLogo from "@/assets/sona-logo.png"
 
 export function Footer() {
   const links = {
@@ -29,7 +30,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-2">
-              <Image src="/images/sona-logo.png" alt="Sona Logo" width={32} height={32} className="rounded-full" />
+              <Image src={sonaLogo} alt="Sona Logo" width={32} height={32} className="rounded-full" />
               <span className="text-xl font-bold text-primary">Sona</span>
             </div>
             <p className="text-muted-foreground text-pretty max-w-md">

@@ -5,6 +5,7 @@ import {Calendar, BookOpen, MessageCircle} from "lucide-react"
 import {Icon} from "@iconify/react";
 import googlePlayIcon from "@iconify/icons-logos/google-play-icon";
 import appleAppStoreIcon from "@iconify/icons-logos/apple-app-store";
+import sonaLogo from "@/assets/sona-logo.png"
 
 const features = [
   {
@@ -86,7 +87,7 @@ export function AppSection() {
           <div className="relative">
             <Card className="p-8 bg-gradient-to-br from-primary/5 to-primary/10">
               <CardContent className="text-center space-y-4">
-                <Image src="/images/sona-logo.png" alt="Sona App" width={200} height={200} className="mx-auto"/>
+                <Image src={sonaLogo} alt="Sona App" width={200} height={200} className="mx-auto"/>
                 <h3 className="text-xl font-semibold">Sona App</h3>
                 <p className="text-muted-foreground">Disponible en Google Play Store y próximamente en iOS.</p>
               </CardContent>

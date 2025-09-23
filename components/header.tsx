@@ -6,6 +6,7 @@ import Link from "next/link"
 import {Button} from "@/components/ui/button"
 import {ThemeToggle} from "@/components/theme-toggle"
 import {Menu, X} from "lucide-react"
+import sonaLogo from "@/assets/sona-logo.png"
 
 const defaultNavs = [
   {name: "Inicio", href: "#inicio"},
@@ -30,7 +31,7 @@ export function Header({navigation = defaultNavs}: Readonly<HeaderProps>) {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/images/sona-logo.png" alt="Sona Logo" width={40} height={40} className="rounded-full"/>
+              <Image src={sonaLogo} alt="Sona Logo" width={40} height={40} className="rounded-full"/>
               <span className="text-xl font-bold text-primary">Sona</span>
             </Link>
           </div>

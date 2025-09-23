@@ -1,4 +1,5 @@
 import Image from "next/image"
+import sonaLogo from "@/assets/sona-logo.png"
 
 export function HeroSection() {
   return (
@@ -20,7 +21,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative z-10">
               <Image
-                src="/images/sona-logo.png"
+                src={sonaLogo}
                 alt="Sona - Símbolo de empoderamiento femenino"
                 width={400}
                 height={400}
