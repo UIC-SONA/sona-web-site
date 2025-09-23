@@ -26,14 +26,13 @@ jobs:
       # 4. Compilar Next.js
       - name: Build Next.js
         run: |
-          echo "${{ secrets.NEXT_PROD_ENV }}" > .env.production
           npm run build
 
       # 5. Preparar y comprimir archivos para deploy
       - name: Prepare and compress deployment files
         run: |
           mkdir -p deploy
-          cp -R .next package.json package-lock.json .env.production deploy/
+          cp -R .next package.json package-lock.json deploy/
           
           # Comprimir todo el directorio deploy
           tar -czf deploy.tar.gz -C deploy .
