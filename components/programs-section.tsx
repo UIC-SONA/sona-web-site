@@ -7,29 +7,25 @@ export function ProgramsSection() {
     {
       icon: Users,
       title: "Talleres de Empoderamiento",
-      description:
-        "Espacios seguros donde las mujeres pueden compartir experiencias, aprender sobre sus derechos y desarrollar habilidades de liderazgo.",
+      description: "Espacios seguros donde las mujeres pueden compartir experiencias, aprender sobre sus derechos y desarrollar habilidades de liderazgo.",
       features: ["Autoestima y confianza", "Liderazgo femenino", "Derechos legales", "Redes de apoyo"],
     },
     {
       icon: GraduationCap,
       title: "Educación en Salud Sexual",
-      description:
-        "Programas educativos integrales sobre salud reproductiva, planificación familiar y prevención de enfermedades.",
+      description: "Programas educativos integrales sobre salud reproductiva, planificación familiar y prevención de enfermedades.",
       features: ["Salud reproductiva", "Planificación familiar", "Prevención de ETS", "Autocuidado"],
     },
     {
       icon: Phone,
       title: "Línea de Apoyo 24/7",
-      description:
-        "Servicio de atención telefónica disponible las 24 horas para mujeres en situación de violencia o que necesiten orientación.",
+      description: "Servicio de atención telefónica disponible las 24 horas para mujeres en situación de violencia o que necesiten orientación.",
       features: ["Atención inmediata", "Orientación legal", "Apoyo psicológico", "Derivación a servicios"],
     },
     {
       icon: Heart,
       title: "Acompañamiento Integral",
-      description:
-        "Seguimiento personalizado para mujeres que han vivido situaciones de violencia, brindando apoyo psicológico y legal.",
+      description: "Seguimiento personalizado para mujeres que han vivido situaciones de violencia, brindando apoyo psicológico y legal.",
       features: ["Apoyo psicológico", "Asesoría legal", "Seguimiento personalizado", "Reinserción social"],
     },
   ]
