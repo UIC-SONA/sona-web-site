@@ -72,12 +72,17 @@ export function AppSection() {
                 </a>
               </Button>
               
-              <Button size="lg" className="md:ml-4 group" disabled>
-                <Icon
-                  icon={appleAppStoreIcon}
-                  className="mr-2 h-4 w-4"
-                />
-                Próximamente en iOS
+              <Button size="lg" className="md:ml-4 group" asChild>
+                <a
+                  href="https://apps.apple.com/us/app/sona-la-app-de-las-chicas/id6752864619?l=es"
+                  target="_blank"
+                >
+                  <Icon
+                    icon={appleAppStoreIcon}
+                    className="mr-2 h-4 w-4"
+                  />
+                  Descargar en App Store
+                </a>
               </Button>
             
             </div>
@@ -89,7 +94,7 @@ export function AppSection() {
               <CardContent className="text-center space-y-4">
                 <Image src={sonaLogo} alt="Sona App" width={200} height={200} className="mx-auto"/>
                 <h3 className="text-xl font-semibold">Sona App</h3>
-                <p className="text-muted-foreground">Disponible en Google Play Store y próximamente en iOS.</p>
+                <p className="text-muted-foreground">Disponible para iOS y Android</p>
               </CardContent>
             </Card>
           </div>

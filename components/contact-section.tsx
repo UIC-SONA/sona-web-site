@@ -4,37 +4,38 @@ import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea"
 import {Mail, Phone, MapPin, Clock} from "lucide-react"
 
+const contactInfo = [
+  {
+    key: 'email',
+    icon: Mail,
+    title: "Email",
+    content: "contacto@sona.ec",
+    description: "Escríbenos para más información",
+  },
+  {
+    key: 'phone',
+    icon: Phone,
+    title: "Línea de Apoyo",
+    content: "0967690719",
+    description: "Disponible en horarios laborales",
+  },
+  {
+    key: 'location',
+    icon: MapPin,
+    title: "Ubicación",
+    content: "Ecuador - Santo Domingo",
+    description: "Nos encontramos en las oficinas de Conagopare Santo Domingo",
+  },
+  {
+    key: 'hours',
+    icon: Clock,
+    title: "Horarios",
+    content: "Lun - Vie: 8:00 - 17:00",
+    description: "Línea de apoyo disponible en horarios laborales",
+  },
+]
+
 export function ContactSection() {
-  const contactInfo = [
-    {
-      key: 'email',
-      icon: Mail,
-      title: "Email",
-      content: "contacto@sona.ec",
-      description: "Escríbenos para más información",
-    },
-    {
-      key: 'phone',
-      icon: Phone,
-      title: "Línea de Apoyo",
-      content: "(02)- 2 2710937",
-      description: "Disponible en horarios laborales",
-    },
-    {
-      key: 'location',
-      icon: MapPin,
-      title: "Ubicación",
-      content: "Ecuador - Santo Domingo",
-      description: "Nos encontramos en las oficinas de Conagopare Santo Domingo",
-    },
-    {
-      key: 'hours',
-      icon: Clock,
-      title: "Horarios",
-      content: "Lun - Vie: 8:00 - 18:00",
-      description: "Línea de apoyo disponible en horarios laborales",
-    },
-  ]
   
   return (
     <section id="contacto" className="py-20">
@@ -50,7 +51,7 @@ export function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div className="grid sm:grid-cols-2 gap-6">
-              {contactInfo.map((info) => (
+              {contactInfo.map(info => (
                 <Card key={info.key} className="text-center group hover:shadow-lg transition-shadow">
                   <CardContent className="pt-6">
                     <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
